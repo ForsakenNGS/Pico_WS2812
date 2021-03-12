@@ -22,15 +22,18 @@ WS2812(uint pin, uint length, PIO pio, uint sm, DataByte b1, DataByte b2, DataBy
 ```
 
 **Required:**
+
 - pin: The GPIO-pin of the pico that is connected to the data line of your LED strip
 - length: The number of LEDs in your strip
 - pio: Either `pio0` or `pio1` representing one of the two PIO-Blocks available in the pico
 - sm: The index of the state machine for interfacing with the led strip (0-3) which can only be used once per PIO-Block
 
 **Optional simple:**
+
 - format: One of `FORMAT_RGB`, `FORMAT_GRB` or `FORMAT_WRGB` depending on your LED strip. Default is `FORMAT_GRB`. If in doubt just try it out.
 
 **Optional flexible:**
+
 If none of the predefined formats matches your strip, you can define the byte order manually
 - b1-b4: One of `RED`, `GREEN`, `BLUE`, `WHITE`
 
