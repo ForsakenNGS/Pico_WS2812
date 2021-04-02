@@ -1,3 +1,7 @@
+# Moved to new project
+
+I created a new more flexible led library implementation at this new project: https://github.com/ForsakenNGS/PicoLED
+
 # Simple WS2812 LED library for the Raspberry Pi Pico in C++
 
 After not finding any libraries to address my WS2812, I took the sample code from the documentation and wrote a simple library based on it.
